@@ -38,7 +38,7 @@ data_sub[indx] <- lapply(data_sub[indx], function(x) as.numeric(x))
 with(data_sub, plot(Datetime, Sub_metering_1,xlab = "", ylab = "Energy sub metering", type = "l", col = "black"))
 with(data_sub, lines(Datetime, Sub_metering_2,type = "l", col = "red"))
 with(data_sub, lines(Datetime, Sub_metering_3,type = "l", col = "blue"))
-legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, legend = c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", col=c("black", "red", "blue"), lty=1, lwd=1,cex=0.7, legend = c("Sub_metering_1          ","Sub_metering_2          ","Sub_metering_3          "))
 
 #Saving Plot3
 dev.copy(png,file = 'Plot3.png', height=480, width=480)
